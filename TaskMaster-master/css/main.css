@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  padding: 0;
+        --s: 34px; /* control the size (the circle diameter) */
+        --c1: #6481bb;
+        --c2: #343434;
+
+        --_g: radial-gradient(calc(var(--s)/2),var(--c1) 97%,#0000);
+        background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          var(--_g),var(--_g) calc(2*var(--s)) calc(2*var(--s)),
+          repeating-conic-gradient(from 45deg,#0000 0 25%,var(--c2) 0 50%) calc(-.707*var(--s)) calc(-.707*var(--s)),
+          repeating-linear-gradient(135deg,var(--c1) calc(var(--s)/-2) calc(var(--s)/2),var(--c2) 0 calc(2.328*var(--s)));
+        background-size: calc(4*var(--s)) calc(4*var(--s));
+
+}  
+
+/*footer*/
+.header{
+  background-color: #343434;
+  height: 50px;
+}
+/* Estilos para el menú lateral */
+    .sidebar {
+        height: 100vh;
+        width: 250px; 
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        background-color: #1c252e; 
+        overflow-x: hidden;
+        padding-top: 20px; 
+    }
+
+    
+
+    /* Estilode  los links de la barra lateral */
+    .sidebar a {
+
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #eeeeee;
+        display: block;
+    }
+
+    /* Cambia el color de los links al pasar el mouse */
+    .sidebar a:hover {
+        color: #c23636;
+    }
+    .diseño-caja{
+
+      border-radius: 50px;
+      background: #fffafa;
+      box-shadow:  10px 0px 60px #000000,
+             -0px -1px 60px #000000;
+             
+    }
+
+    .diseño-newboard{
+      border-radius: 15px;
+      background: #f0f0f0;
+      box-shadow:  10px 0px 60px #000000,
+             -0px -1px 60px #000000;
+             
+    }
+
+    .diseño-caja-form{
+      border-radius: 50px;
+      background: #fffafa;
+      box-shadow:  10px 0px 60px #000000,
+             -0px -1px 60px #000000;
+             
+    }
+
+    .board-style{
+    background: white;
+    padding: 5rem;
+    margin-left: 15px;
+    border-radius: 1rem;
+    }
+
+    /*.borrado a{
+      color:#447eb7
+    }
+    .borrado a:hover{
+      color: #c23636;
+    
+  }*/
+
